@@ -660,9 +660,11 @@ namespace clojure.lang
         /// Compare to another ref.
         /// </summary>
         /// <param name="other">The other ref.</param>
-        /// <returns><value>true</value> if they are identical; <value>false</value> otherwise.</returns>
+        /// <returns><value>0</value> if they are identical; less than 0 when this instances preceeds <paramref name="other"/>; greater than 0 otherwise.</returns>
         public int CompareTo(Ref other)
         {
+            if (ReferenceEquals(other, null))
+                return 1;
             return _id.CompareTo(other._id);
         }
 
@@ -676,7 +678,7 @@ namespace clojure.lang
                 return true;
 
             Ref r = obj as Ref;
-            if (r == null)
+            if (ReferenceEquals(r, null))
                 return false;
 
             return _id == r._id;
@@ -695,7 +697,7 @@ namespace clojure.lang
             if (ReferenceEquals(x, y))
                 return true;
 
-            if ((object)x == null)
+            if (ReferenceEquals(x, null) || ReferenceEquals(y, null))
                 return false;
 
             return x.CompareTo(y) == 0;
