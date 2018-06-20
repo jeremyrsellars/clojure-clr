@@ -43,15 +43,15 @@ namespace clojure.lang
         public static readonly IPersistentMap DEFAULT_IMPORTS = map(
             //classes
             Symbol.intern("AccessViolationException"), typeof(AccessViolationException),
-            Symbol.intern("ActivationContext"), typeof(ActivationContext),
+            //Symbol.intern("ActivationContext"), typeof(ActivationContext),
             Symbol.intern("Activator"), typeof(Activator),
             Symbol.intern("AppDomain"), typeof(AppDomain),
-            Symbol.intern("AppDomainManager"), typeof(AppDomainManager),
-            Symbol.intern("AppDomainSetup"), typeof(AppDomainSetup),
+            //Symbol.intern("AppDomainManager"), typeof(AppDomainManager),
+            //Symbol.intern("AppDomainSetup"), typeof(AppDomainSetup),
             Symbol.intern("AppDomainUnloadedException"), typeof(AppDomainUnloadedException),
             Symbol.intern("ApplicationException"), typeof(ApplicationException),
             Symbol.intern("ApplicationId"), typeof(ApplicationId),
-            Symbol.intern("ApplicationIdentity"), typeof(ApplicationIdentity),
+            //Symbol.intern("ApplicationIdentity"), typeof(ApplicationIdentity),
             Symbol.intern("ArgumentException"), typeof(ArgumentException),
             Symbol.intern("ArgumentNullException"), typeof(ArgumentNullException),
             Symbol.intern("ArgumentOutOfRangeException"), typeof(ArgumentOutOfRangeException),
@@ -167,7 +167,7 @@ namespace clojure.lang
             Symbol.intern("Version"), typeof(Version),
             Symbol.intern("WeakReference"), typeof(WeakReference),
             // structures/
-            Symbol.intern("ArgIterator"), typeof(ArgIterator),
+            //Symbol.intern("ArgIterator"), typeof(ArgIterator),
             // Symbol.intern(""),typeof(ArraySegment<T>),
             Symbol.intern("Boolean"), typeof(Boolean),
             Symbol.intern("Byte"), typeof(Byte),
@@ -200,7 +200,7 @@ namespace clojure.lang
             // Symbol.intern(""),typeof(Void),
             // interfaces/
             //Symbol.intern("AppDomain"), typeof(AppDomain),
-            Symbol.intern("IAppDomainSetup"), typeof(IAppDomainSetup),
+            //Symbol.intern("IAppDomainSetup"), typeof(IAppDomainSetup),
             Symbol.intern("IAsyncResult"), typeof(IAsyncResult),
             Symbol.intern("ICloneable"), typeof(ICloneable),
             Symbol.intern("IComparable"), typeof(IComparable),
@@ -218,13 +218,13 @@ namespace clojure.lang
             // Symbol.intern(""),typeof(Action<T1,T2>/
             // Symbol.intern(""),typeof(Action<T1,T2,T3>/
             // Symbol.intern(""),typeof(Action<T1,T2,T3,T4>/
-            Symbol.intern("AppDomainInitializer"), typeof(AppDomainInitializer),
+            //Symbol.intern("AppDomainInitializer"), typeof(AppDomainInitializer),
             Symbol.intern("AssemblyLoadEventHandler"), typeof(AssemblyLoadEventHandler),
             Symbol.intern("AsyncCallback"), typeof(AsyncCallback),
             // Symbol.intern(""),typeof(Comparison<T>),
             Symbol.intern("ConsoleCancelEventHandler"), typeof(ConsoleCancelEventHandler),
             //Symbol.intern(""),typeof(Converter<TInput,TOutput>),
-            Symbol.intern("CrossAppDomainDelegate"), typeof(CrossAppDomainDelegate),
+            //Symbol.intern("CrossAppDomainDelegate"), typeof(CrossAppDomainDelegate),
             Symbol.intern("EventHandler"), typeof(EventHandler),
             // Symbol.intern(""),typeof(EventHandler<TEventArgs>),
             // Symbol.intern(""),typeof(Func<TResult>),
@@ -236,8 +236,8 @@ namespace clojure.lang
             Symbol.intern("ResolveEventHandler"), typeof(ResolveEventHandler),
             Symbol.intern("UnhandledExceptionEventHandler"), typeof(UnhandledExceptionEventHandler),
             // Enumerations/
-            Symbol.intern("ActivationContext.ContextForm"), typeof(ActivationContext.ContextForm),
-            Symbol.intern("AppDomainManagerInitializationOptions"), typeof(AppDomainManagerInitializationOptions),
+            //Symbol.intern("ActivationContext.ContextForm"), typeof(ActivationContext.ContextForm),
+            //Symbol.intern("AppDomainManagerInitializationOptions"), typeof(AppDomainManagerInitializationOptions),
             Symbol.intern("AttributeTargets"), typeof(AttributeTargets),
             Symbol.intern("Base64FormattingOptions"), typeof(Base64FormattingOptions),
             Symbol.intern("ConsoleColor"), typeof(ConsoleColor),
@@ -259,7 +259,7 @@ namespace clojure.lang
             Symbol.intern("UriComponents"), typeof(UriComponents),
             Symbol.intern("UriFormat"), typeof(UriFormat),
             Symbol.intern("UriHostNameType"), typeof(UriHostNameType),
-            Symbol.intern("UriIdnScope"), typeof(UriIdnScope),
+            //Symbol.intern("UriIdnScope"), typeof(UriIdnScope),
             Symbol.intern("UriKind"), typeof(UriKind),
             Symbol.intern("UriPartial"), typeof(UriPartial),
             // ADDED THESE TO SUPPORT THE BOOTSTRAPPING IN THE JAVA CORE.CLJ

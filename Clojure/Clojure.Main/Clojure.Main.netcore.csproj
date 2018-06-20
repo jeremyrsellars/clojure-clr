@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Clojure.Main</AssemblyName>
+    <RootNamespace>Clojure.Main</RootNamespace>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DynamicLanguageRuntime" Version="1.2.1" />
+    <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.Emit.ILGeneration" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />
+    <ProjectReference Include="..\Clojure\Clojure.netcore.csproj" />
+    <ProjectReference Include="..\Clojure.Compile\Clojure.Compile.netcore.csproj" />
+  </ItemGroup>
+
+</Project>
